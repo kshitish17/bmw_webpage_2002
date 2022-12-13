@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta name ="viewport" content="width=device-width" initial-scale="1.0">
+        <title>Take a test drive of BMW G 310 R </title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="container" id="bike">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <a href="a" class="btn">Test drive</a>
+            </nav>
+            <div class="content">
+                <h2>BMW</h2>
+                <h1>G 310 R</h1>
+                <p>The G 310 R is a great bike. The suspension outclasses almost all of the competition, as do the brakes. For a new rider, this bike's intimidation factor is low from the saddle as the riding position is great for a wide range of rider sizes.</p>
+                <h3>Choose your colour</h3>
+                <div class="colour-select">
+                    <div id="red"></div>
+                    <div id="blue"></div>
+                    <div id="black"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        let redBtn = document.getElementById("red");
+        let blueBtn = document.getElementById("blue");
+        let blackBtn = document.getElementById("black");
+        let bike = document.getElementById("bike");
+
+        redBtn.onclick=function(){
+            bike.style.backgroundImage="url(images/BMW1.png)";
+        }
+        blueBtn.onclick=function(){
+            bike.style.backgroundImage="url(images/BMW2.png)";
+        }
+        blackBtn.onclick=function(){
+            bike.style.backgroundImage="url(images/BMW3.png)";
+        }
+    </script>
+</html>
